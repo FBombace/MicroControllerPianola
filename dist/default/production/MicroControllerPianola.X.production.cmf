@@ -1,0 +1,897 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\MicroControllerPianola.X.production.obj
+cinit CODE 0 20B 20B 1B 2
+text1 CODE 0 463 463 87 2
+text2 CODE 0 5D1 5D1 9 2
+text3 CODE 0 31C 31C B4 2
+text4 CODE 0 226 226 F6 2
+text5 CODE 0 594 594 22 2
+text6 CODE 0 4EA 4EA 65 2
+text8 CODE 0 5DA 5DA 5 2
+text9 CODE 0 5E3 5E3 3 2
+text10 CODE 0 5C4 5C4 D 2
+text11 CODE 0 5E6 5E6 3 2
+text12 CODE 0 5E9 5E9 3 2
+text13 CODE 0 5EC 5EC 3 2
+text14 CODE 0 54F 54F 45 2
+maintext CODE 0 3D0 3D0 93 2
+cstackCOMMON COMMON 1 70 70 9 1
+cstackBANK0 BANK0 1 20 20 3E 1
+intentry CODE 0 4 4 205 2
+bssBANK0 BANK0 1 5E 5E 4 1
+idataBANK0 CODE 0 5DF 5DF 4 2
+swtext1 CONST 0 5B6 5B6 E 2
+dataBANK0 BANK0 1 62 62 4 1
+bssCOMMON COMMON 1 79 79 4 1
+$C:\Users\Fabio\AppData\Local\Temp\srk.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 209 209 2 2
+config CONFIG 0 8007 8007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 66-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK0 66-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 2-3 2
+CONST 5EF-1FFF 2
+ENTRY 2-3 2
+ENTRY 5EF-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2046-23EF 1
+CODE 2-3 2
+CODE 5EF-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+COMMON 7D-7D 1
+CONFIG 8008-8008 2
+EEDATA F000-F0FF 2
+STRCODE 2-3 2
+STRCODE 5EF-1FFF 2
+STRING 2-3 2
+STRING 5EF-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\MicroControllerPianola.X.production.obj
+20B cinit CODE >459:C:\Users\Fabio\AppData\Local\Temp\srk.
+20B cinit CODE >462:C:\Users\Fabio\AppData\Local\Temp\srk.
+20B cinit CODE >500:C:\Users\Fabio\AppData\Local\Temp\srk.
+20C cinit CODE >501:C:\Users\Fabio\AppData\Local\Temp\srk.
+20D cinit CODE >502:C:\Users\Fabio\AppData\Local\Temp\srk.
+20E cinit CODE >503:C:\Users\Fabio\AppData\Local\Temp\srk.
+20F cinit CODE >507:C:\Users\Fabio\AppData\Local\Temp\srk.
+210 cinit CODE >508:C:\Users\Fabio\AppData\Local\Temp\srk.
+211 cinit CODE >509:C:\Users\Fabio\AppData\Local\Temp\srk.
+212 cinit CODE >510:C:\Users\Fabio\AppData\Local\Temp\srk.
+213 cinit CODE >515:C:\Users\Fabio\AppData\Local\Temp\srk.
+216 cinit CODE >516:C:\Users\Fabio\AppData\Local\Temp\srk.
+217 cinit CODE >517:C:\Users\Fabio\AppData\Local\Temp\srk.
+21A cinit CODE >518:C:\Users\Fabio\AppData\Local\Temp\srk.
+21B cinit CODE >519:C:\Users\Fabio\AppData\Local\Temp\srk.
+21E cinit CODE >520:C:\Users\Fabio\AppData\Local\Temp\srk.
+21F cinit CODE >521:C:\Users\Fabio\AppData\Local\Temp\srk.
+221 cinit CODE >522:C:\Users\Fabio\AppData\Local\Temp\srk.
+222 cinit CODE >528:C:\Users\Fabio\AppData\Local\Temp\srk.
+222 cinit CODE >530:C:\Users\Fabio\AppData\Local\Temp\srk.
+223 cinit CODE >531:C:\Users\Fabio\AppData\Local\Temp\srk.
+224 cinit CODE >532:C:\Users\Fabio\AppData\Local\Temp\srk.
+4 intentry CODE >69:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+9 intentry CODE >72:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+B intentry CODE >74:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+F intentry CODE >92:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+10 intentry CODE >96:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1C intentry CODE >98:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+21 intentry CODE >100:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+23 intentry CODE >101:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+26 intentry CODE >102:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+29 intentry CODE >105:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+2C intentry CODE >106:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+2F intentry CODE >107:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+31 intentry CODE >110:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+34 intentry CODE >113:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+37 intentry CODE >115:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3A intentry CODE >116:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3B intentry CODE >119:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+40 intentry CODE >120:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+48 intentry CODE >122:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+4B intentry CODE >125:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+50 intentry CODE >129:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5C intentry CODE >131:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+61 intentry CODE >133:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+63 intentry CODE >134:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+66 intentry CODE >135:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+69 intentry CODE >138:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+6C intentry CODE >139:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+6F intentry CODE >140:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+71 intentry CODE >143:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+74 intentry CODE >146:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+77 intentry CODE >148:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+7A intentry CODE >149:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+7B intentry CODE >152:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+80 intentry CODE >153:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+88 intentry CODE >155:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+8B intentry CODE >158:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+90 intentry CODE >162:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+9C intentry CODE >164:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+A2 intentry CODE >166:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+A6 intentry CODE >167:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+A9 intentry CODE >168:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+AC intentry CODE >171:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+AF intentry CODE >172:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+B2 intentry CODE >173:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+B4 intentry CODE >176:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+B7 intentry CODE >179:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+BA intentry CODE >181:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+BD intentry CODE >182:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+BE intentry CODE >185:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+C3 intentry CODE >186:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+CB intentry CODE >188:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+CE intentry CODE >191:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+D3 intentry CODE >195:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+DF intentry CODE >197:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+E5 intentry CODE >199:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+E9 intentry CODE >200:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+EC intentry CODE >201:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+EF intentry CODE >204:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+F2 intentry CODE >205:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+F5 intentry CODE >206:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+F7 intentry CODE >209:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+FA intentry CODE >212:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+FD intentry CODE >214:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+100 intentry CODE >215:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+101 intentry CODE >218:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+106 intentry CODE >219:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+10E intentry CODE >221:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+111 intentry CODE >224:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+116 intentry CODE >228:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+122 intentry CODE >230:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+128 intentry CODE >232:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+12C intentry CODE >233:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+12F intentry CODE >234:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+132 intentry CODE >237:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+135 intentry CODE >238:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+138 intentry CODE >239:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+13A intentry CODE >242:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+13D intentry CODE >245:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+140 intentry CODE >247:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+143 intentry CODE >248:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+144 intentry CODE >251:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+149 intentry CODE >252:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+151 intentry CODE >254:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+154 intentry CODE >257:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+159 intentry CODE >261:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+165 intentry CODE >263:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+16B intentry CODE >265:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+16F intentry CODE >266:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+172 intentry CODE >267:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+175 intentry CODE >270:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+178 intentry CODE >271:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+17B intentry CODE >272:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+17D intentry CODE >275:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+180 intentry CODE >278:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+183 intentry CODE >280:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+186 intentry CODE >281:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+187 intentry CODE >284:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+18C intentry CODE >285:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+194 intentry CODE >287:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+197 intentry CODE >290:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+19C intentry CODE >291:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+19D intentry CODE >294:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1A9 intentry CODE >296:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1AF intentry CODE >298:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1B3 intentry CODE >299:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1B6 intentry CODE >300:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1B9 intentry CODE >303:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1BC intentry CODE >304:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1BF intentry CODE >305:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1C1 intentry CODE >308:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1C4 intentry CODE >311:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1C7 intentry CODE >313:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1CA intentry CODE >314:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1CB intentry CODE >317:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1D0 intentry CODE >318:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1D8 intentry CODE >320:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1DB intentry CODE >323:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1DE intentry CODE >325:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1DF intentry CODE >92:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1EE intentry CODE >326:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+1FF intentry CODE >328:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+200 intentry CODE >329:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+201 intentry CODE >331:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+202 intentry CODE >333:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+203 intentry CODE >334:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+204 intentry CODE >336:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+205 intentry CODE >338:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+54F text14 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+54F text14 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+550 text14 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+552 text14 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+557 text14 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+559 text14 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+55B text14 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+560 text14 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+564 text14 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+566 text14 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+568 text14 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+56D text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+571 text14 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+572 text14 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+57A text14 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+57E text14 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+583 text14 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+587 text14 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+58A text14 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+58F text14 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awmod.c
+5EC text13 CODE >40:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5EC text13 CODE >42:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5EE text13 CODE >43:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5E9 text12 CODE >45:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5E9 text12 CODE >47:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5EB text12 CODE >48:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5E6 text11 CODE >55:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5E6 text11 CODE >57:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5E8 text11 CODE >58:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5C4 text10 CODE >60:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5C4 text10 CODE >62:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5C7 text10 CODE >63:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5C9 text10 CODE >64:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5CE text10 CODE >65:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5D0 text10 CODE >66:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5E3 text9 CODE >50:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5E3 text9 CODE >52:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5E5 text9 CODE >53:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5DA text8 CODE >31:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5DA text8 CODE >33:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5DC text8 CODE >34:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5DC text8 CODE >37:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+5B6 swtext1 CONST >92:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+4EA text6 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+4EA text6 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+4F3 text6 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+4FA text6 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+4FE text6 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+504 text6 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+509 text6 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+50D text6 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+517 text6 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+51D text6 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+51D text6 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+522 text6 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+524 text6 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+52A text6 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+530 text6 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+532 text6 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+538 text6 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+53A text6 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+54A text6 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+54D text6 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+54E text6 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
+594 text5 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+594 text5 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+596 text5 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+598 text5 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+59D text5 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+59F text5 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awtoft.c
+226 text4 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+226 text4 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+233 text4 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+23F text4 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+24E text4 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+255 text4 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+264 text4 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+268 text4 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+269 text4 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+26A text4 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+26B text4 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+26C text4 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+26D text4 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+273 text4 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+274 text4 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+27A text4 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+27E text4 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+284 text4 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+286 text4 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+291 text4 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+297 text4 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+29B text4 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2A0 text4 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2A4 text4 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2AA text4 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2AC text4 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2B7 text4 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2BD text4 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2C1 text4 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2C5 text4 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2C7 text4 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2CD text4 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2D7 text4 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2D9 text4 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2DF text4 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2E9 text4 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2EA text4 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2F0 text4 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2F2 text4 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+2F8 text4 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+302 text4 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+304 text4 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
+31C text3 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+31C text3 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+32C text3 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+333 text3 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+342 text3 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+349 text3 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+34E text3 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+35E text3 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+36E text3 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+372 text3 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+373 text3 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+374 text3 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+37A text3 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+380 text3 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+384 text3 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+386 text3 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+38C text3 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+392 text3 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+398 text3 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+39C text3 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+3A0 text3 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+3A2 text3 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+3A8 text3 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+3AE text3 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+3B4 text3 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+3B8 text3 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
+5D1 text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+5D1 text2 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+5D7 text2 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftneg.c
+463 text1 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+463 text1 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+473 text1 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+47C text1 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+48C text1 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+48D text1 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+493 text1 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+49A text1 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+49C text1 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+49E text1 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4A3 text1 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4AC text1 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4B3 text1 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4BA text1 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4BE text1 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4C7 text1 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4CE text1 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4D0 text1 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4D0 text1 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4D3 text1 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4D6 text1 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+4E1 text1 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fttol.c
+3D0 maintext CODE >341:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3D0 maintext CODE >343:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3D7 maintext CODE >346:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3DA maintext CODE >347:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3DC maintext CODE >350:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3DE maintext CODE >352:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3E1 maintext CODE >354:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3E4 maintext CODE >355:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3E7 maintext CODE >363:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3E9 maintext CODE >364:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3EA maintext CODE >365:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3EC maintext CODE >369:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3EF maintext CODE >371:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3F0 maintext CODE >373:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3F1 maintext CODE >374:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3F5 maintext CODE >375:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3F6 maintext CODE >376:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3FA maintext CODE >379:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3FB maintext CODE >380:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3FC maintext CODE >381:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3FD maintext CODE >382:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3FE maintext CODE >383:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+3FF maintext CODE >384:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+400 maintext CODE >386:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+402 maintext CODE >387:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+41C maintext CODE >391:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+454 maintext CODE >400:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+456 maintext CODE >401:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+459 maintext CODE >404:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+45B maintext CODE >405:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+45C maintext CODE >406:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+45D maintext CODE >407:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+45E maintext CODE >408:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+45F maintext CODE >409:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+460 maintext CODE >411:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+461 maintext CODE >412:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+462 maintext CODE >415:C:\Users\Fabio\MPLABXProjects\MicroControllerPianola.X\mainSrc.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_waitTimer2 BB4 0 CODE 0 text8 dist/default/production\MicroControllerPianola.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 8008 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+___awtoft@sign 2D 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_T1CONbits 18 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_TMR0 15 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Fabio\AppData\Local\Temp\srk.obj
+_main 7A0 0 CODE 0 maintext dist/default/production\MicroControllerPianola.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+___ftadd@f1 3B 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___ftadd@f2 3E 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+start 412 0 CODE 0 init C:\Users\Fabio\AppData\Local\Temp\srk.obj
+ttemp 7E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_disableCCP1Out BD2 0 CODE 0 text12 dist/default/production\MicroControllerPianola.X.production.obj
+__end_of_finishNote BA2 0 CODE 0 text10 dist/default/production\MicroControllerPianola.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\MicroControllerPianola.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__end_of_disableLed BD2 0 CODE 0 text11 dist/default/production\MicroControllerPianola.X.production.obj
+_selected_cps_pin 5E 0 BANK0 1 bssBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Fabio\AppData\Local\Temp\srk.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Fabio\AppData\Local\Temp\srk.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Fabio\AppData\Local\Temp\srk.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Fabio\AppData\Local\Temp\srk.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Fabio\AppData\Local\Temp\srk.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Fabio\AppData\Local\Temp\srk.obj
+__end_of_waitTimer2 BBE 0 CODE 0 text8 dist/default/production\MicroControllerPianola.X.production.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+___ftmul@f1 28 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___ftmul@f2 2B 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___ftneg@f1 38 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_ANSELC 18E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__size_of___awtoft 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__end_of_disableCCP1Out BD8 0 CODE 0 text12 dist/default/production\MicroControllerPianola.X.production.obj
+_CCPR1L 291 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+___fttol@f1 48 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of___ftpack 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__end_of___awmod B28 0 CODE 0 text14 dist/default/production\MicroControllerPianola.X.production.obj
+__end_of___ftadd 638 0 CODE 0 text4 dist/default/production\MicroControllerPianola.X.production.obj
+__end_of___ftmul 7A0 0 CODE 0 text3 dist/default/production\MicroControllerPianola.X.production.obj
+__end_of___ftneg BB4 0 CODE 0 text2 dist/default/production\MicroControllerPianola.X.production.obj
+__end_of___fttol 9D4 0 CODE 0 text1 dist/default/production\MicroControllerPianola.X.production.obj
+__size_of_lightLed 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+start_initialization 416 0 CODE 0 cinit dist/default/production\MicroControllerPianola.X.production.obj
+_CCPTMRSbits 29E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_OSCCON 99 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+___awtoft B28 0 CODE 0 text5 dist/default/production\MicroControllerPianola.X.production.obj
+_TRISCbits 8E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__end_of___awtoft B6C 0 CODE 0 text5 dist/default/production\MicroControllerPianola.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+_T1GCON 19 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+___fttol@exp1 55 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___fttol@lval 51 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___ftpack 9D4 0 CODE 0 text6 dist/default/production\MicroControllerPianola.X.production.obj
+_last_pin_touched 64 0 BANK0 1 dataBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+_lightLed BC6 0 CODE 0 text9 dist/default/production\MicroControllerPianola.X.production.obj
+___ftpack@arg 20 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___ftpack@exp 23 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Fabio\AppData\Local\Temp\srk.obj
+__end_of___ftpack A9E 0 CODE 0 text6 dist/default/production\MicroControllerPianola.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 44C 0 CODE 0 cinit -
+__size_of_finishNote 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__end_of_lightLed BCC 0 CODE 0 text9 dist/default/production\MicroControllerPianola.X.production.obj
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10010 0 CONFIG 0 config -
+__size_of_disableLed 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit 416 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+___ftadd@exp1 47 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___ftadd@exp2 46 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___ftadd@sign 45 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+__size_of_waitTimer2 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_PORTCbits E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 412 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 412 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+int$flags 7E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_PR2 1B 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__S0 8008 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 8 0 CODE 0 intentry dist/default/production\MicroControllerPianola.X.production.obj
+___awtoft@c 28 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__end_of_isr 412 0 CODE 0 intentry dist/default/production\MicroControllerPianola.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Fabio\AppData\Local\Temp\srk.obj
+__pdataBANK0 62 0 BANK0 1 dataBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+?___awtoft 28 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\MicroControllerPianola.X.production.obj
+_enableCCP1Out BD8 0 CODE 0 text13 dist/default/production\MicroControllerPianola.X.production.obj
+_threshold_frequency 7B 0 COMMON 1 bssCOMMON dist/default/production\MicroControllerPianola.X.production.obj
+__ptext10 B88 0 CODE 0 text10 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext11 BCC 0 CODE 0 text11 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext12 BD2 0 CODE 0 text12 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext13 BD8 0 CODE 0 text13 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext14 A9E 0 CODE 0 text14 dist/default/production\MicroControllerPianola.X.production.obj
+___awmod A9E 0 CODE 0 text14 dist/default/production\MicroControllerPianola.X.production.obj
+___ftadd 44C 0 CODE 0 text4 dist/default/production\MicroControllerPianola.X.production.obj
+___ftmul 638 0 CODE 0 text3 dist/default/production\MicroControllerPianola.X.production.obj
+___ftneg BA2 0 CODE 0 text2 dist/default/production\MicroControllerPianola.X.production.obj
+___fttol 8C6 0 CODE 0 text1 dist/default/production\MicroControllerPianola.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 7A0 0 CODE 0 maintext dist/default/production\MicroControllerPianola.X.production.obj
+__Lbigram 0 0 ABS 0 bigram -
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+?___ftpack 20 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__size_of_disableCCP1Out 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+stackhi 23EF 0 ABS 0 - C:\Users\Fabio\AppData\Local\Temp\srk.obj
+stacklo 2046 0 ABS 0 - C:\Users\Fabio\AppData\Local\Temp\srk.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+___ftmul@cntr 36 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__pbssCOMMON 79 0 COMMON 1 bssCOMMON dist/default/production\MicroControllerPianola.X.production.obj
+___ftmul@sign 37 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_MAX_STEP_SOUND_LENGTH 62 0 BANK0 1 dataBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+_PIR1bits 11 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__Lend_init 412 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 444 0 CODE 0 cinit dist/default/production\MicroControllerPianola.X.production.obj
+__Hintentry 412 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\MicroControllerPianola.X.production.obj
+?___ftadd 3B 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+?___ftmul 28 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+?___ftneg 38 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+?___fttol 48 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+_CPSCON0bits 1E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_CPSCON1bits 1F 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\MicroControllerPianola.X.production.obj
+__ptext1 8C6 0 CODE 0 text1 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext2 BA2 0 CODE 0 text2 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext3 638 0 CODE 0 text3 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext4 44C 0 CODE 0 text4 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext5 B28 0 CODE 0 text5 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext6 9D4 0 CODE 0 text6 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext8 BB4 0 CODE 0 text8 dist/default/production\MicroControllerPianola.X.production.obj
+__ptext9 BC6 0 CODE 0 text9 dist/default/production\MicroControllerPianola.X.production.obj
+_step_count 60 0 BANK0 1 bssBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__size_of_enableCCP1Out 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___ftmul@exp 32 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__end_of__initialization 444 0 CODE 0 cinit dist/default/production\MicroControllerPianola.X.production.obj
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\MicroControllerPianola.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+__pidataBANK0 BBE 0 CODE 0 idataBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+___ftpack@sign 24 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+__end_of_enableCCP1Out BDE 0 CODE 0 text13 dist/default/production\MicroControllerPianola.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\MicroControllerPianola.X.production.obj
+__Hend_init 416 0 CODE 0 end_init -
+__end_of_main 8C6 0 CODE 0 maintext dist/default/production\MicroControllerPianola.X.production.obj
+_T1CON 18 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_T2CON 1C 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_TMR1H 17 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_TMR1L 16 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_TRISA 8C 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_TRISC 8E 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+_CCP1CON 293 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\MicroControllerPianola.X.production.obj
+main@cps_frequency 5B 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+___fttol@sign1 50 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+_OSCSTATbits 9A 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__size_of_isr 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization 416 0 CODE 0 cinit dist/default/production\MicroControllerPianola.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\MicroControllerPianola.X.production.obj
+__pbssBANK0 5E 0 BANK0 1 bssBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+_finishNote B88 0 CODE 0 text10 dist/default/production\MicroControllerPianola.X.production.obj
+_disableLed BCC 0 CODE 0 text11 dist/default/production\MicroControllerPianola.X.production.obj
+__pswtext1 B6C 0 CONST 0 swtext1 dist/default/production\MicroControllerPianola.X.production.obj
+___ftmul@f3_as_product 33 0 BANK0 1 cstackBANK0 dist/default/production\MicroControllerPianola.X.production.obj
+_new_frequency 79 0 COMMON 1 bssCOMMON dist/default/production\MicroControllerPianola.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text10 0 5C4 B88 2B 2
+cstackCOMMON 1 70 70 D 1
+cstackBANK0 1 20 20 46 1
+intentry 0 4 8 5B2 2
+reset_vec 0 0 0 2 2
+swtext1 0 5B6 B6C E 2
+config 0 8007 1000E 1 2
